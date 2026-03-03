@@ -1,0 +1,57 @@
+app/(tabs)/index.tsx(6,30): error TS2307: Cannot find module '@src/modules/dashboard/components/HeroCarousel' or its corresponding type declarations.
+app/(tabs)/index.tsx(7,32): error TS2307: Cannot find module '@src/modules/dashboard/components/AnimatedHeader' or its corresponding type declarations.
+app/(tabs)/index.tsx(8,31): error TS2307: Cannot find module '@src/modules/dashboard/components/CategoryPills' or its corresponding type declarations.
+app/(tabs)/index.tsx(9,30): error TS2307: Cannot find module '@src/modules/dashboard/components/TrendingList' or its corresponding type declarations.
+app/(tabs)/index.tsx(10,33): error TS2307: Cannot find module '@src/modules/dashboard/components/NewReleasesList' or its corresponding type declarations.
+app/(tabs)/index.tsx(11,38): error TS2307: Cannot find module '@src/modules/dashboard/components/ContinueWatchingList' or its corresponding type declarations.
+app/movie/[id].tsx(145,17): error TS2322: Type '{ data: { id: number; title: string; slug: string; description: string; poster_url: string; video_url: string; year: number; duration_minutes: number; views_count: number; is_featured: boolean; is_original: boolean; ... 7 more ...; rating?: number | ... 1 more ... | undefined; }[]; numColumns: number; estimatedItemS...' is not assignable to type 'IntrinsicAttributes & FlashListProps<{ id: number; title: string; slug: string; description: string; poster_url: string; video_url: string; year: number; duration_minutes: number; ... 10 more ...; rating?: number | ... 1 more ... | undefined; }> & { ...; }'.
+  Property 'estimatedItemSize' does not exist on type 'IntrinsicAttributes & FlashListProps<{ id: number; title: string; slug: string; description: string; poster_url: string; video_url: string; year: number; duration_minutes: number; ... 10 more ...; rating?: number | ... 1 more ... | undefined; }> & { ...; }'.
+src/modules/auth/apis/auth-login.api.ts(4,27): error TS2307: Cannot find module '@src/modules/users/dtos/user.dto' or its corresponding type declarations.
+src/modules/auth/components/auth-form.tsx(67,17): error TS2322: Type 'boolean | null' is not assignable to type 'boolean | undefined'.
+  Type 'null' is not assignable to type 'boolean | undefined'.
+src/modules/auth/components/auth-form.tsx(74,23): error TS2322: Type '"/register"' is not assignable to type '"/(auth)/login" | RelativePathString | ExternalPathString | "/dashboard" | `/dashboard?${string}` | `/dashboard#${string}` | "/" | `/?${string}` | `/#${string}` | "/_sitemap" | ... 35 more ... | { ...; }'.
+src/modules/auth/components/auth-form.tsx(82,23): error TS2322: Type '"/forgot-password"' is not assignable to type '"/(auth)/login" | RelativePathString | ExternalPathString | "/dashboard" | `/dashboard?${string}` | `/dashboard#${string}` | "/" | `/?${string}` | `/#${string}` | "/_sitemap" | ... 35 more ... | { ...; }'.
+src/modules/auth/stores/auth.store.ts(2,27): error TS2307: Cannot find module '@src/modules/users/dtos/user.dto' or its corresponding type declarations.
+src/modules/auth/stores/auth.store.ts(3,25): error TS2307: Cannot find module '@src/modules/common/utils/storage' or its corresponding type declarations.
+src/modules/common/utils/storage.ts(3,28): error TS2693: 'MMKV' only refers to a type, but is being used as a value here.
+src/modules/dashboard/components/CategoryPills.tsx(5,31): error TS2307: Cannot find module '@src/modules/genres/apis/genre.index.api' or its corresponding type declarations.
+src/modules/dashboard/components/CategoryPills.tsx(23,26): error TS7006: Parameter 'genre' implicitly has an 'any' type.
+src/modules/dashboard/components/ContinueWatchingList.tsx(5,38): error TS2307: Cannot find module '@src/modules/users/apis/watch-history.index.api' or its corresponding type declarations.
+src/modules/dashboard/components/ContinueWatchingList.tsx(26,17): error TS2322: Type '{ data: any; horizontal: true; showsHorizontalScrollIndicator: false; estimatedItemSize: number; contentContainerStyle: { paddingHorizontal: number; }; keyExtractor: (item: unknown) => string; renderItem: ({ item }: ListRenderItemInfo<...>) => Element | null; }' is not assignable to type 'IntrinsicAttributes & FlashListProps<unknown> & { ref?: Ref<FlashListRef<unknown>> | undefined; }'.
+  Property 'estimatedItemSize' does not exist on type 'IntrinsicAttributes & FlashListProps<unknown> & { ref?: Ref<FlashListRef<unknown>> | undefined; }'.
+src/modules/dashboard/components/ContinueWatchingList.tsx(28,48): error TS18046: 'item' is of type 'unknown'.
+src/modules/dashboard/components/ContinueWatchingList.tsx(30,35): error TS18046: 'item' is of type 'unknown'.
+src/modules/dashboard/components/ContinueWatchingList.tsx(35,38): error TS18046: 'item' is of type 'unknown'.
+src/modules/dashboard/components/HeroCarousel.tsx(9,31): error TS2307: Cannot find module '@src/modules/movies/apis/movie.index.api' or its corresponding type declarations.
+src/modules/dashboard/components/HeroCarousel.tsx(37,9): error TS2322: Type '{ data: any; horizontal: true; pagingEnabled: true; showsHorizontalScrollIndicator: false; estimatedItemSize: number; keyExtractor: (item: unknown) => string; renderItem: ({ item }: ListRenderItemInfo<unknown>) => Element; }' is not assignable to type 'IntrinsicAttributes & FlashListProps<unknown> & { ref?: Ref<FlashListRef<unknown>> | undefined; }'.
+  Property 'estimatedItemSize' does not exist on type 'IntrinsicAttributes & FlashListProps<unknown> & { ref?: Ref<FlashListRef<unknown>> | undefined; }'.
+src/modules/dashboard/components/HeroCarousel.tsx(38,40): error TS18046: 'item' is of type 'unknown'.
+src/modules/dashboard/components/HeroCarousel.tsx(42,30): error TS18046: 'item' is of type 'unknown'.
+src/modules/dashboard/components/HeroCarousel.tsx(74,22): error TS18046: 'item' is of type 'unknown'.
+src/modules/dashboard/components/HeroCarousel.tsx(79,71): error TS18046: 'item' is of type 'unknown'.
+src/modules/dashboard/components/HeroCarousel.tsx(81,71): error TS18046: 'item' is of type 'unknown'.
+src/modules/dashboard/components/HeroCarousel.tsx(116,63): error TS18046: 'item' is of type 'unknown'.
+src/modules/dashboard/components/NewReleasesList.tsx(5,31): error TS2307: Cannot find module '@src/modules/movies/apis/movie.index.api' or its corresponding type declarations.
+src/modules/dashboard/components/NewReleasesList.tsx(25,17): error TS2322: Type '{ data: any; horizontal: true; showsHorizontalScrollIndicator: false; estimatedItemSize: number; contentContainerStyle: { paddingHorizontal: number; }; keyExtractor: (item: unknown) => string; renderItem: ({ item }: ListRenderItemInfo<...>) => Element; }' is not assignable to type 'IntrinsicAttributes & FlashListProps<unknown> & { ref?: Ref<FlashListRef<unknown>> | undefined; }'.
+  Property 'estimatedItemSize' does not exist on type 'IntrinsicAttributes & FlashListProps<unknown> & { ref?: Ref<FlashListRef<unknown>> | undefined; }'.
+src/modules/dashboard/components/NewReleasesList.tsx(27,48): error TS18046: 'item' is of type 'unknown'.
+src/modules/dashboard/components/NewReleasesList.tsx(29,44): error TS18046: 'item' is of type 'unknown'.
+src/modules/dashboard/components/NewReleasesList.tsx(32,48): error TS18046: 'item' is of type 'unknown'.
+src/modules/dashboard/components/TrendingList.tsx(5,31): error TS2307: Cannot find module '@src/modules/movies/apis/movie.index.api' or its corresponding type declarations.
+src/modules/dashboard/components/TrendingList.tsx(26,17): error TS2322: Type '{ data: any; horizontal: true; showsHorizontalScrollIndicator: false; estimatedItemSize: number; contentContainerStyle: { paddingHorizontal: number; }; keyExtractor: (item: unknown) => string; renderItem: ({ item, index }: ListRenderItemInfo<...>) => Element; }' is not assignable to type 'IntrinsicAttributes & FlashListProps<unknown> & { ref?: Ref<FlashListRef<unknown>> | undefined; }'.
+  Property 'estimatedItemSize' does not exist on type 'IntrinsicAttributes & FlashListProps<unknown> & { ref?: Ref<FlashListRef<unknown>> | undefined; }'.
+src/modules/dashboard/components/TrendingList.tsx(28,48): error TS18046: 'item' is of type 'unknown'.
+src/modules/dashboard/components/TrendingList.tsx(30,43): error TS18046: 'item' is of type 'unknown'.
+src/modules/dashboard/components/TrendingList.tsx(36,48): error TS18046: 'item' is of type 'unknown'.
+src/modules/genres/apis/genre.index.api.ts(4,25): error TS2307: Cannot find module '@src/const/env.const' or its corresponding type declarations.
+src/modules/genres/dtos/genre.index.dto.ts(2,29): error TS2307: Cannot find module './genre.schema' or its corresponding type declarations.
+src/modules/movies/components/cast-list.tsx(26,21): error TS2322: Type '{ data: CastMember[]; horizontal: true; showsHorizontalScrollIndicator: false; estimatedItemSize: number; keyExtractor: (item: CastMember) => string; contentContainerStyle: { ...; }; renderItem: ({ item }: ListRenderItemInfo<...>) => Element; }' is not assignable to type 'IntrinsicAttributes & FlashListProps<CastMember> & { ref?: Ref<FlashListRef<CastMember>> | undefined; }'.
+  Property 'estimatedItemSize' does not exist on type 'IntrinsicAttributes & FlashListProps<CastMember> & { ref?: Ref<FlashListRef<CastMember>> | undefined; }'.
+src/modules/search/components/recent-history.tsx(25,9): error TS2322: Type '{ data: string[]; horizontal: true; showsHorizontalScrollIndicator: false; contentContainerStyle: { paddingHorizontal: number; }; estimatedItemSize: number; renderItem: ({ item }: ListRenderItemInfo<string>) => Element; }' is not assignable to type 'IntrinsicAttributes & FlashListProps<string> & { ref?: Ref<FlashListRef<string>> | undefined; }'.
+  Property 'estimatedItemSize' does not exist on type 'IntrinsicAttributes & FlashListProps<string> & { ref?: Ref<FlashListRef<string>> | undefined; }'.
+src/modules/search/components/result-grid.tsx(21,9): error TS2322: Type '{ data: { id: number; title: string; slug: string; description: string; poster_url: string; video_url: string; year: number; duration_minutes: number; views_count: number; is_featured: boolean; is_original: boolean; ... 7 more ...; rating?: number | ... 1 more ... | undefined; }[]; ... 5 more ...; ListEmptyComponent...' is not assignable to type 'IntrinsicAttributes & FlashListProps<{ id: number; title: string; slug: string; description: string; poster_url: string; video_url: string; year: number; duration_minutes: number; ... 10 more ...; rating?: number | ... 1 more ... | undefined; }> & { ...; }'.
+  Property 'estimatedItemSize' does not exist on type 'IntrinsicAttributes & FlashListProps<{ id: number; title: string; slug: string; description: string; poster_url: string; video_url: string; year: number; duration_minutes: number; ... 10 more ...; rating?: number | ... 1 more ... | undefined; }> & { ...; }'.
+src/modules/search/stores/use-search-store.ts(4,28): error TS2693: 'MMKV' only refers to a type, but is being used as a value here.
+src/modules/users/apis/watch-history.index.api.ts(4,25): error TS2307: Cannot find module '@src/const/env.const' or its corresponding type declarations.
+src/modules/users/schemas/watch-history.schema.ts(2,29): error TS2307: Cannot find module '@src/modules/movies/schemas/movie.schema' or its corresponding type declarations.
+src/stores/auth.store.ts(5,28): error TS2693: 'MMKV' only refers to a type, but is being used as a value here.

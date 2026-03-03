@@ -1,0 +1,9 @@
+{
+  "name": "@microfrontend/ui-kit",
+  "version": "0.0.1",
+  "main": "src/index.tsx",
+  "dependencies": {
+    "react": "*",
+    "react-native": "*"
+  }
+}

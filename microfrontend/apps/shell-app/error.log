@@ -1,0 +1,12 @@
+
+  WARNING: You should run npx react-native@latest to ensure you're always using the most current version of the CLI. NPX has cached version (0.73.0) != current release (0.84.1)
+  
+error __dirname is not defined.
+ReferenceError: __dirname is not defined
+    at default (file:///C:/Users/Admin/Desktop/react-native-expo/microfrontend/apps/shell-app/rspack.config.mjs:19:23)
+    at C:\Users\Admin\Desktop\react-native-expo\microfrontend\node_modules\.pnpm\@callstack+repack@5.2.4_@ba_5dfe22d57793461cae43edcbd2245960\node_modules\@callstack\repack\dist\commands\common\config\makeCompilerConfig.js:54:14
+    at Array.map (<anonymous>)
+    at makeCompilerConfig (C:\Users\Admin\Desktop\react-native-expo\microfrontend\node_modules\.pnpm\@callstack+repack@5.2.4_@ba_5dfe22d57793461cae43edcbd2245960\node_modules\@callstack\repack\dist\commands\common\config\makeCompilerConfig.js:51:62)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async Object.start [as func] (C:\Users\Admin\Desktop\react-native-expo\microfrontend\node_modules\.pnpm\@callstack+repack@5.2.4_@ba_5dfe22d57793461cae43edcbd2245960\node_modules\@callstack\repack\dist\commands\rspack\start.js:31:19)
+    at async Command.handleAction (C:\Users\Admin\Desktop\react-native-expo\microfrontend\node_modules\.pnpm\@react-native-community+cli@12.1.1_encoding@0.1.13\node_modules\@react-native-community\cli\build\index.js:118:9)

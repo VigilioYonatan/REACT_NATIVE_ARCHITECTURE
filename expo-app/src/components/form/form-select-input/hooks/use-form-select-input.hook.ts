@@ -1,0 +1,76 @@
+import useDropdown from "@hooks/use-dropdown";
+import { useSignal } from "@preact/signals-react";
+import { useContext, useEffect } from "react";
+import type { FieldValues, Path, PathValue, UseFormReturn } from "react-hook-form";
+import { anidarPropiedades, FormControlContext } from "../..";
+
+export interface UseFormSelectInputProps<T extends object> {
+  name: Path<T>;
+  array: { value: string; key: string | number }[];
+}
+
+export function useFormSelectInput<T extends object>({ name, array }: UseFormSelectInputProps<T>) {
+  const {
+    register,
+    formState: { errors },
+    setValue,
+    getValues,
+  } = useContext<UseFormReturn<T, unknown, FieldValues>>(FormControlContext);
+  const dropdown = useDropdown();
+
+  const err = anidarPropiedades(errors, (name as string).split("."));
+  const input = useSignal<null | string>(null);
+  const isFocused = useSignal<boolean>(false);
+
+  const valueArray = useSignal<{ value: string; key: string | number }[]>([]);
+  const value = getValues(name as Path<T>);
+
+  useEffect(() => {
+    if (array.length) {
+      if (!input.value || !input.value?.length) {
+        valueArray.value = [];
+        setValue(name as Path<T>, null as PathValue<T, Path<T>>);
+        return;
+      }
+      valueArray.value = array
+        .filter((val) => new RegExp((input.value || "").toLowerCase(), "i").test(val.value.toLowerCase()))
+        .slice(0, 8);
+      if (!valueArray.value.length) {
+        setValue(name as Path<T>, null as PathValue<T, Path<T>>);
+      }
+    }
+  }, [input.value, array, name, setValue, valueArray]);
+
+  useEffect(() => {
+    if (value) {
+      const data = array.find((val) => val.key === value) ?? null;
+      if (data) {
+        input.value = data.value;
+        setValue(name as Path<T>, data?.key as PathValue<T, Path<T>>);
+      }
+    }
+  }, [value, array, input, name, setValue]);
+
+  useEffect(() => {
+    if (value) {
+      const data = array.find((val) => val.key === value) ?? null;
+      if (data) {
+        input.value = data.value;
+        setValue(name as Path<T>, data?.key as PathValue<T, Path<T>>);
+      }
+    }
+  }, [array, input, name, setValue, value]);
+
+  return {
+    register,
+    setValue,
+    dropdown,
+    err,
+    input,
+    isFocused: !!isFocused.value,
+    setIsFocused: (val: boolean) => {
+      isFocused.value = val;
+    },
+    valueArray,
+  };
+}
