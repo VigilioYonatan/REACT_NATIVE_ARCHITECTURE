@@ -1,0 +1,24 @@
+{
+  "name": "@ecommerce/cart-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3002",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview --port 3002"
+  },
+  "dependencies": {
+    "@ecommerce/events": "workspace:*",
+    "@ecommerce/shared-types": "workspace:*",
+    "pinia": "^2.3.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@module-federation/vite": "^1.1.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0",
+    "vue-tsc": "^2.2.0"
+  }
+}
